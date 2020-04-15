@@ -1,0 +1,45 @@
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#add-image p {
+  padding: 1rem 0;
+  color: var(--link-color);
+  font-size: inherit;
+}
+
+#bio {
+  padding: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#profile-name {
+  padding: .6rem;
+}
+
+.input-icons i {
+  position: absolute;
+  margin-bottom: 2px;
+  line-height: .2;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  margin-top: 1.3rem;
+  color: green;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}

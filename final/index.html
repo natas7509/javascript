@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mmp350 | Final</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-storage.js"></script>
+
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+		 https://firebase.google.com/docs/web/setup#config-web-app -->
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCB8Bb4IO_s3pqcEyt0IaNtsfCGBnF4CX4",
+			authDomain: "mmp-three-fifty.firebaseapp.com",
+			databaseURL: "https://mmp-three-fifty.firebaseio.com",
+			projectId: "mmp-three-fifty",
+			storageBucket: "mmp-three-fifty.appspot.com",
+			messagingSenderId: "29267025222",
+			appId: "1:29267025222:web:ec58ffdc137b3be2ced947"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		//		firebase.analytics();
+
+	</script>
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="menu">
+			<ul>
+				<li><img src="images/logo_2.png"></li>
+				<li><a href="users.html">Users</a></li>
+			</ul>
+		</div>
+
+		<header id="showcase">
+			<div class="showcase-content">
+				<h1 class="l-heading">
+					MMP-350<span class="text-primary-3"> Blog</span>
+				</h1>
+				<div class="lead">
+					<p>“Welcome to the MMP-350 class blog - where students get to update each other on social activities, current events, and everyday life in New York ”</p>
+				</div>
+				<a href="users.html" class="btn">Class List</a>
+			</div>
+		</header>
+
+		<div id="login">
+			<div class="login-items">
+				<input id="email" placeholder="Email">
+				<input id="password" placeholder="Password" type="password">
+				<button id="login-button" class="btn">Login</button>
+				<p id="login-message"></p>
+				<p><a href="create.html">Create new account</a></p>
+			</div>
+		</div>
+
+		<div id="user-info">
+			<p id="user-name"></p>
+			<button id="logout-button" class="btn">Logout</button>
+		</div>
+
+		<div id="main">
+			<div id="write-post">
+				<textarea id="post-text" placeholder="Compose a new post"></textarea>
+				<button id="publish" class="btn">Publish</button>
+				<div id="attach-image">
+
+					<input id="image-file" type="file" accept="image/png, image/gif, image/jpeg">
+					<button id="submit-image" class="btn">Upload Image</button>
+				</div>
+			</div>
+			<div id="posts"></div>
+		</div>
+
+		<div id="profile">
+			<img id="edit-profile-image" src="images/subwayFace.jpg" alt="">
+			<button id="edit-profile" class="btn">Edit Profile</button>
+		</div>
+
+		<div id="social">
+			<ul class="social-icons">
+				<a href="https://www.instagram.com/"><i class="fa fa-instagram fa-3x"></i></a>
+				<a href="https://twitter.com/"><i class="fa fa-twitter-square fa-3x"></i></a>
+				<a href="https://www.youtube.com/"><i class="fa fa-youtube-square fa-3x"></i></a>
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-3x"></i></a>
+			</ul>
+		</div>
+
+		<div id="sidebar1-right">
+			<H1>Shocking!</H1>
+			<div class="sb-container-1">
+				<img src="images/chimp.jpg">
+				<h5>What really happened to Michael Jackson's chimp? The gruesome details here!</h5>
+			</div>
+			<div class="sb-container-1">
+				<img src="images/depp-1.jpg">
+				<h5>Did Jonnny Depp used to be a woman? All is revealed here!</h5>
+			</div>
+			<div class="sb-container-1">
+				<img src="images/girl.jpeg">
+				<h5>106 year old woman just won't age!! Her secret revealed here!</h5>
+			</div>
+			<div class="sb-container-1">
+				<img src="images/beckham.jpg">
+				<h5>David Beckham's Horrific Plastic Surgery! What tempted the football star to go overboard?</h5>
+			</div>
+		</div>
+
+		<div id="sidebar1-left">
+			<iframe src="https://open.spotify.com/embed/album/4VU0CUltJKm1BT38zgFjOB" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+		</div>
+
+
+		<div id="sidebar2-left">
+			<blockquote class="embedly-card">
+				<h4><a href="https://www.theonion.com/">The Onion | America's Finest News Source.</a></h4>
+				<p>BROOKLYN, NY-As they donned jumpsuits and prepared to meet their employer's relentless performance quotas, the cast members of Emmy-winning TV show The Marvelous Mrs. Maisel reportedly clocked in this morning to begin their mandatory 12-hour Black Friday shift at a local Amazon warehouse. "Listen, none of us like...
+				</p>
+			</blockquote>
+			<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+		</div>
+
+	</div>
+
+	<script src="js/auth.js"></script>
+	<script src="js/publish.js"></script>
+	<script src="js/posts.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>

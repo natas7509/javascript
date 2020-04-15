@@ -1,0 +1,68 @@
+/*======================== TYPOG
+
+font-family: 'Lato',
+sans-serif;
+font-family: 'ZCOOL XiaoWei',
+serif;
+
+ ===================================*/
+
+:root {
+	--display-font: 'ZCOOL XiaoWei', serif;
+	--text-font: 'Lato', cursive;
+	--link-font: var(--display-font);
+}
+body {
+	font-family: var(--text-font);
+}
+#menu ul a,
+#social ul li {
+	font-family: var(--link-font);
+	text-transform: uppercase;
+}
+header {
+	font-size: 3vmin;
+}
+.l-heading {
+	font-family: var(--display-font);
+	font-size: 1.5vmax;
+}
+#tagTitle .l-heading {
+	font-family: var(--display-font);
+	font-size: 2.5vmax;
+}
+#sidebar1-right h1 {
+	font-family: var(--display-font);
+}
+#sidebar2-left .embedly-card {
+	font-family: var(--text-font);
+}
+#sidebar2-left .embedly-card a {
+	font-family: var(--display-font);
+	font-size: 1.5rem;
+}
+.post .author {
+	font-family: var(--display-font);
+	font-size: 1.5vmax;
+	text-transform: uppercase;
+	letter-spacing: .6px;
+}
+.post .date {
+	font-size: 2.3vmin;
+	font-family: var(--text-font);
+}
+#write-post,
+#login {
+	font-family: var(--text-font);
+}
+#post-text {
+	font-family: var(--text-font);
+	font-size: 1.8vmin;
+	padding: .6rem;
+}
+#users .user a {
+	font-size: 2vmax;
+}
+.btn {
+	font-family: var(--display-font);
+}

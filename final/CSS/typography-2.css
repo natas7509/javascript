@@ -1,0 +1,68 @@
+/*======================== TYPOG
+
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+ ===================================*/
+
+:root {
+	--display-font: 'Raleway', sans-serif;
+	--text-font: 'Roboto', sans-serif;
+	--link-font: var(--display-font);
+}
+
+body {
+	font-family: var(--display-font);
+}
+
+#menu ul a,
+#social ul li {
+	font-family: var(--link-font);
+	text-transform: uppercase;
+}
+
+
+/* .post {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--link-color)
+} */
+
+.post .text {
+	font-family: var(--text-font);
+	background-color: var(--link-color);
+	color: var(--main-text);
+	padding: .5em;
+	text-align: left;
+	margin-bottom: .5em;
+
+}
+
+header {
+	font-size: 3vmin;
+}
+
+.post .author {
+	font-size: 1.5vmax;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	color: var(--bg-drk);
+	margin-bottom: .5em;
+	padding: .5em;
+	border: none;
+}
+
+.post .date {
+	font-size: 2.3vmin;
+	font-family: var(--text-font);
+	background-color: var(--bgDrk);
+	color: var(--link-color);
+	padding: .5em;
+}
+
+
+
+#write-post,
+#login {
+	font-family: var(--text-font);
+}

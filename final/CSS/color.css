@@ -1,0 +1,148 @@
+/* Complementary */
+
+
+/* :root {
+    --main-hue: 200;
+    --complement-hue: calc(var(--main-hue) - 180);
+
+    --main-color: hsl(var(--main-hue), 50%, 50%);
+    --complement: hsl(var(--complement-hue), 50%, 50%);
+    --link-color: hsl(var(--main-hue), 50%, 90%);
+    --accent-one: hsl(var(--main-hue), 20%, 90%);
+    --accent-two: hsl(var(--complement-hue), 40%, 60%);
+    --main-text: hsl(var(--main-hue), 50%, 10%);
+    --btnHover: hsl(var(--main-hue), 40%, 20%);
+    --textSpan: var(--bgLight);
+    --textSpan2: var(--bgDrk);
+    --bgDrk: var(--complement);
+    --bgLight: var(--accent-one);
+    --btnDrk: var(--main-text);
+    --btnLight: var(--bgLight);
+} */
+
+
+/* Triad */
+
+
+/* :root {
+    --main-hue: 200;
+    --accent-one-hue: calc(var(--main-hue) - 120);
+    --accent-two-hue: calc(var(--main-hue) + 120);
+
+    --main-color: hsl(var(--main-hue), 10%, 30%);
+    --accent-one: hsl(var(--accent-one-hue), 10%, 80%);
+    --accent-two: hsl(var(--accent-two-hue), 50%, 50%);
+    --btnDrk: hsl(var(--main-hue), 15%, 30%);
+    --btnHover: hsl(var(--main-hue), 10%, 20%);
+    --textSpan: hsl(var(--main-hue), 20%, 70%);
+    --textSpan2: hsl(var(--accent-one-hue), 30%, 60%);
+    --bgLight: var(--accent-one);
+    --bgDrk: var(--accent-two);
+    --link-color: var(--bgLight);
+    --textLight: var(--bgLight);
+} */
+
+
+/* Mono */
+
+:root {
+	--main-hue: 193;
+	--saturation: 20;
+	--lightness: 20;
+	--sat-percent: calc(var(--saturation) * 1%);
+	--light-percent: calc(var(--lightness) * 1%);
+	--main-color: hsl(var(--main-hue), 50%, 50%);
+	--accent-one: hsl(var(--main-hue), var(--sat-percent), 70%);
+	--btnHover: hsl(var(--main-hue), var(--sat-percent), 40%);
+	--link-color: hsl(var(--main-hue), var(--sat-percent), 90%);
+	--accent-two: hsl(var(--main-hue), 50%, var(--light-percent));
+	--accent-three: hsl(var(--main-hue), var(--sat-percent), 70%);
+	--bgLight: var(--accent-one);
+	--bgDrk: var(--accent-two);
+	--btnDrk: var(--bgDrk);
+	--textSpan: var(--link-color);
+	--textSpan2: var(--link-color);
+}
+
+#user-info {
+	background-color: var(--link-color);
+}
+
+.showcase-content {
+	color: var(--accent-three);
+}
+
+#menu {
+	background-color: var(--bgDrk);
+}
+
+#menu ul li a {
+	color: var(--link-color);
+}
+
+#menu ul li a:hover {
+	color: var(--btnHover);
+}
+
+.title {
+	background-color: var(--bgLight);
+}
+
+.l-heading {
+	color: var(--accent-three);
+}
+
+#tagTitle .l-heading {
+	color: var(--btnDrk);
+}
+
+.text-primary-2 {
+	color: var(--textSpan);
+}
+
+.text-primary-1 {
+	color: var(--textSpan2);
+}
+
+#main {
+	background-color: var(--main-color);
+	color: var(--textLight);
+}
+
+#login {
+	background-color: var(--main-color);
+}
+
+.btn {
+	background-color: var(--btnDrk);
+	color: var(--link-color);
+}
+
+.btn:hover {
+	background-color: var(--btnHover);
+}
+
+#sidebar2-left .embedly-card {
+	color: var(--accent-two);
+}
+
+/* PUBLISH */
+
+#posts {
+	background-color: var(--link-color);
+}
+
+.post .date {
+	background-color: var(--btnDrk);
+	color: var(--link-color);
+}
+
+#write-post {
+	background-color: var(--main-color);
+}
+
+/*CREATE PAGE*/
+
+#create-container {
+	background-color: var(--main-color);
+}
